@@ -1,0 +1,349 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #E1EFF6;
+}
+header{
+  background-image: linear-gradient(#86AFBE,#69777F,#181F32); 
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.icon{
+    float: left;
+    padding-left: 10px;
+    width: 70px;
+    border-radius: 25%;
+    margin: 10px;
+}
+.cname{
+    float: left;
+    margin: 15px 0 15px 10px;
+    color: #E1EFF6;
+    font-size: 40px;
+    line-height: 1;
+    font-family:'Dancing Script','Pacifico' ;
+}
+span{
+    color: #000;
+    margin-left: 10px;
+}
+nav{
+  float: right;
+}
+
+nav ul{
+    margin-right: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    margin: 20px 0 0 75px;
+    padding-top: 1rem;
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    align-items: center;
+}
+nav a{
+    color: #E1EFF6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1;
+    font-family:'Dancing Script','Pacifico';
+    text-shadow: #000;
+}
+nav a:hover{
+    color: #000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #E1EFF6;
+    position: absolute;
+    top: 0%;
+    width: 0%;
+    transition: all ease-out 250ms;
+}
+nav a:hover::before
+{width: 100%;
+}
+.sb-example-1 .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.sb-example-1 .searchTerm {
+  width: 100%;
+  border: 3px solid #69777F;
+  border-right: none;
+  padding: 5px;
+  border-radius: 2%;
+  outline: none;
+  color: #E1EFF6;
+  text-align: center;
+}
+.sb-example-1 .searchTerm:focus{
+  color: #E1EFF6;
+}
+.sb-example-1 .searchButton {
+  width: 40px;
+  height: 50px;
+  border: 1px solid #E1EFF6;
+  background: #69777F;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.title-one {
+  position: absolute;
+  top: 200px;
+  color: #181F32;
+  font-size: 40px;
+}
+.title-two {
+  position: absolute;
+  top: 950px;
+  padding: 60px;
+  white-space: inherit;
+  color: #181F32;
+  font-size: 22px;
+}
+hr{
+  width: 70%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E1EFF6;
+}
+.container-slide {
+    background-color: #E1EFF6;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 10%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 2, 115, 0.2);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX( 70rem );
+  background-image: url( https://i.ibb.co/Zms63VD/souful-arthur-covington.jpg );
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: color;
+}
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url( https://i.ibb.co/tX5mjPX/flower-4-lady-bugs-arthur-covington.jpg );
+  animation-delay: 7s;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url( https://i.ibb.co/PMxNfkc/son-of-eternity-arthur-covington.jpg );
+  animation-delay: 14s;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url( https://i.ibb.co/71FQsp2/potters-wheel-arthur-covington.jpg );
+  animation-delay: 21s;
+      width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@keyframes opaqTransition {
+  3% { transform: translateX( 0 ); }
+  25% { transform: translateX( 0 ); }
+  28% { transform: translateX( -700px ); }
+  100% { transform: translateX( -700px ); }
+}
+.gallery-container{
+     display: flex;
+     flex-wrap:wrap;
+     padding: 5px;
+     justify-content: space-between;
+     align-items: inherit;
+     background-color: #E1EFF6;
+}
+.title-gallery{
+  display: flex;
+  justify-content: center;
+  color: #181F32;
+  background-color: #E1EFF6;
+  font-size: 60px;
+  padding: 40px;
+}
+.image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.image-gallery > li {
+  list-style: none;
+  flex-basis: 350px; /* width: 350px; */
+}
+.image-gallery li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 10%;
+  border: 2px solid #000;
+}
+.image-gallery::after {
+  content: "";
+  flex-basis: 350px;
+}
+.image-gallery > li {
+  /* ... */
+  position: relative;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #69777F;
+  border-radius: 10%;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+.about-me{
+  text-align: center;
+  white-space:pre;
+  padding: 5px;
+  font-size: 24px;
+  background-color: #E1EFF6;
+}
+.pro{
+  float: center;
+  padding: 15px;
+  height: 220px;
+}
+
+.bottom-container{
+  background-image: linear-gradient(#86AFBE,#69777F,#181F32); 
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+}
+.foot-logo{
+  height: 130px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.social{
+  list-style: none;
+  display: flex;
+}
+.social i{
+  padding-left: 50px;
+  color: #181F32;
+}
+.social i:hover{
+  color: #E1EFF6;
+}
+/*Floating Back-To-Top Button*/
+    #myBtn {
+        position: fixed;
+        bottom: 10px;
+        float: right;
+        right: 5%;
+        left: 95%;
+        max-width: 50px;
+        width: 100%;
+        font-size: 16px;
+        border-color: rgba(85, 85, 85, 0.2);
+        background-color: rgb(100,100,100);
+        padding: .5px;
+        border-radius: 10%;
+
+    }
+/*On Hover Color Change*/
+    #myBtn:hover {
+        background-color: #69777F;
+    }
+ 
